@@ -7,7 +7,6 @@ import ThemeContext from "../contexts/ThemeContext";
 
 const Leftbar = () => {
   const { theme, setTheme } = useContext(ThemeContext);
-  console.log("Theme", theme);
   return (
     <div
       className={
