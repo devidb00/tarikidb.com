@@ -1,7 +1,9 @@
 const MySkills = () => {
   return (
-    <div className="pt-8">
-      <p className="uppercase font-hairline-bold text-xl">Mes compétences</p>
+    <div>
+      <p className="uppercase font-hairline-bold text-xl italic">
+        Mes compétences
+      </p>
       <div>
         <p className="mt-4 font-hairline">
           <span className="font-bold">Web : </span>

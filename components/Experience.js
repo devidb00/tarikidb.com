@@ -1,10 +1,10 @@
 const Experience = () => {
   return (
     <div>
-      <p className="uppercase font-hairline-bold text-xl mt-4">
+      <p className="uppercase font-hairline-bold sm:text-xl mt-4 italic">
         mes différentes expériences professionnelles
       </p>
-      <p className="text-justify pr-8 mt-4">
+      <p className="text-justify mt-4">
         Je suis actuellement Scrum Master et membre de l'équipe de développement
         en tant que développeur Web -{" "}
         <a href="https://reactjs.org" target="_blank">

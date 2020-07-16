@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-import { Leftbar, MainLayout } from "../components";
+import { Leftbar } from "../components";
 import ThemeContext from "../contexts/ThemeContext";
 
 export default function Home() {

@@ -11,32 +11,27 @@ const Leftbar = () => {
     <div
       className={
         theme === "night"
-          ? `bg-gray-100 text-black flex justify-between`
-          : `bg-gray-900 text-white flex justify-between`
+          ? `bg-gray-900 text-white lg:flex justify-between`
+          : `bg-gray-100 text-black lg:flex justify-between`
       }
     >
-      <div className="w-1/4 h-screen shadow-2xl mr-10 sticky top-0">
-        <div>
-          <img
-            className="rounded-full h-32 w-32 flex items-center justify-center mx-auto my-12"
-            src="ProfileImage.jpeg"
-          />
-          <p className="text-justify text-xl italic font-hairline mx-8">
-            Salut, <img />
-            C'est Tarik. Sur ce site, tu peux voir mon C.V ainsi que tout ce qui
-            me passsionne. Have fun !
-          </p>
-          <a
-            className="fixed bottom-0 mx-32 pb-4"
-            href="https://urlz.fr/ds5e"
-            target="_blank"
-          >
-            <img src="/linkedin.png" />
+      <div className="lg:w-1/4 lg:h-screen shadow-2xl lg:sticky lg:top-0">
+        <img
+          className="rounded-full h-16 w-16 lg:h-32 lg:w-32 mx-auto lg:my-12"
+          src="ProfileImage.jpeg"
+        />
+        <p className="text-justify font-light lg:font-hairline lg:text-lg mx-4 pt-4">
+          Salut, c'est Tarik. Sur ce site, tu peux voir mon C.V ainsi que tout
+          ce qui me passsionne. Have fun !
+        </p>
+        <div className="flex lg:space-x-4 lg:bottom-0 lg:absolute lg:mx-40 lg:mb-4">
+          <a href="https://urlz.fr/ds5e" target="_blank">
+            <img className="flex-row" src="/linkedin.png" />
           </a>
           <input
-            className="fixed bottom-0 mx-48 pb-4"
             type="image"
-            src={`${theme}.png`}
+            className="flex-row"
+            src={theme === "sun" ? `/night.png` : "/sun.png"}
             onClick={() => {
               if (theme === "sun") {
                 setTheme("night");
@@ -47,8 +42,8 @@ const Leftbar = () => {
           />
         </div>
       </div>
-      <div className="w-3/4 mb-4">
-        <MySkills className="ml-10" />
+      <div className="mx-4 lg:w-3/4 lg:mb-4 pt-8">
+        <MySkills />
         <Studies />
         <Experience />
         <Learning />

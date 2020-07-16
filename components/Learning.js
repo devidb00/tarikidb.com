@@ -1,15 +1,16 @@
 const Learning = () => {
   return (
-    <div>
-      <p className="uppercase mt-4 font-hairline-bold text-xl">
+    <div className="mb-4">
+      <p className="uppercase mt-4 font-hairline-bold text-xl italic">
         en cours d'apprentissage
       </p>
       <div className="mt-4">
         <p>
-          Comme l'apprentissage se s'arrêtte jamais, je suis en ce moment des
-          cours pour apprendre ou pour me mettre à jour (liste non exhaustive):
+          Je suis en ce moment des cours pour apprendre ou pour me mettre à jour
+          (liste non exhaustive) :
         </p>
         <ul>
+          <li> - Python</li>
           <li> - GraphQL à travers Udemy</li>
           <li>
             {" "}

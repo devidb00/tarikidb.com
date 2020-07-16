@@ -1,7 +1,7 @@
 const Studies = () => {
   return (
     <div>
-      <p className="uppercase font-hairline-bold text-xl mt-4">
+      <p className="uppercase font-hairline-bold text-xl mt-4 italic">
         mon cursus universitaire
       </p>
       <div className="mt-4 flex items-center">
