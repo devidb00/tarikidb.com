@@ -24,9 +24,9 @@ const Leftbar = () => {
           Salut, c'est Tarik. Sur ce site, tu peux voir mon C.V ainsi que tout
           ce qui me passsionne.
         </p>
-        <div className="flex space-x-4 py-2 lg:bottom-0 lg:absolute lg:pb-4">
+        <div className="flex space-x-4 py-2 pl-40 lg:bottom-0 lg:absolute lg:pb-4">
           <a href="https://urlz.fr/ds5e" target="_blank">
-            <img className="flex-row h-4 ml-40" src="/linkedin.png" />
+            <img className="flex-row h-4" src="/linkedin.png" />
           </a>
           <input
             type="image"
