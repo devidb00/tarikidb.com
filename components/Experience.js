@@ -2,7 +2,7 @@ const Experience = () => {
   return (
     <div>
       <p className="uppercase font-hairline-bold text-xl mt-4 italic">
-        mes différentes expériences professionnelles
+        mes expériences professionnelles
       </p>
       <p className="text-justify mt-4">
         Je suis actuellement Scrum Master et membre de l'équipe de développement
