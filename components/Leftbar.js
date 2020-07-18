@@ -9,18 +9,31 @@ const Leftbar = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
     <div
-      className={`flex flex-row ${
+      className={`flex lg:flex-row flex-col ${
         theme === "sun" ? "bg-grey-200 text-black" : "bg-gray-900 text-white"
       }`}
     >
-      <div className="flex flex-col h-screen w-1/4 shadow-2xl sticky top-0">
+      <div
+        className={`flex flex-col ${
+          theme === "sun"
+            ? "bg-white border-white"
+            : "bg-gray-900 border-gray-900"
+        } h-32 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
+      >
         <div className="h-full">
           <img
-            className="rounded-full h-32 w-32 mx-auto my-8"
+            className="rounded-full h-16 w-16 lg:h-32 lg:w-32 mx-auto lg:my-8 my-2"
             src="/ProfileImage.jpeg"
             alt="Ma photo"
           />
-          <p className="text-center px-4">Salut, c'est Tarik !</p>
+          <div className="hidden lg:inline text-sm text-center italic font-thin">
+            <p className="mx-4">Salut, c'est Tarik !</p>
+            <p className="mx-4">
+              {" "}
+              Je suis Scrum Master. Je m'interesse aussi beaucoup à la BI et au
+              développement Web !
+            </p>
+          </div>
         </div>
         <div className="h-12 flex flex-row justify-center items-baseline space-x-4">
           <div>
@@ -44,7 +57,7 @@ const Leftbar = () => {
           </div>
         </div>
       </div>
-      <div className="w-3/4 h-auto px-6 py-4">
+      <div className="w-screen lg:w-3/4 h-auto px-4 lg:px-6 lg:py-4 py-2">
         <MySkills />
         <Studies />
         <Experience />

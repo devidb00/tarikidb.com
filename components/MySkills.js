@@ -1,11 +1,11 @@
 const MySkills = () => {
   return (
     <div>
-      <p className="uppercase font-hairline-bold text-xl italic">
+      <p className="uppercase font-hairline-bold text-xl italic text-center lg:text-left">
         Mes compétences
       </p>
       <div>
-        <p className="mt-4 font-hairline">
+        <p className="mt-4 font-hairline text-justify">
           <span className="font-bold">Web : </span>
           <a href="https://www.typescriptlang.org/" target="_blank">
             TypeScript

@@ -1,12 +1,12 @@
 const Studies = () => {
   return (
-    <div>
-      <p className="uppercase font-hairline-bold text-xl mt-4 italic">
+    <div className="px-0">
+      <p className="uppercase font-hairline-bold text-xl mt-4 italic text-center lg:text-left">
         mon cursus universitaire
       </p>
-      <div className="mt-4 flex items-center">
+      <div className="mt-4 flex items-center text-left">
         <img className="w-16" src="/saclay.png" alt="Université Paris-Saclay" />
-        <span className="ml-4">
+        <span className="pl-4">
           2020 : Master 2 MIAGE - Informatique Décisionnelle{" "}
           <span className="italic">(Orsay - 91400)</span>
         </span>
@@ -17,7 +17,7 @@ const Studies = () => {
           src="/descartes.png"
           alt="Université Paris Descartes"
         />
-        <span className="ml-4">
+        <span className="pl-4">
           2017 : Licence Informatique parcours MIAGE{" "}
           <span className="italic">(Paris - 75006)</span>
         </span>
@@ -28,7 +28,7 @@ const Studies = () => {
           src="/reims.png"
           alt="Université Reims Champagne-Ardenne"
         />
-        <span className="ml-4">
+        <span className="pl-4">
           2016 : DUT Informatique{" "}
           <span className="italic">(Reims - 51100)</span>
         </span>

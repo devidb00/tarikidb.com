@@ -1,7 +1,7 @@
 const Experience = () => {
   return (
     <div>
-      <p className="uppercase font-hairline-bold text-xl mt-4 italic">
+      <p className="uppercase font-hairline-bold text-xl mt-4 italic text-center lg:text-left">
         mes expériences professionnelles
       </p>
       <p className="text-justify mt-4">
