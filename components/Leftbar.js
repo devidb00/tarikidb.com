@@ -18,7 +18,7 @@ const Leftbar = () => {
           theme === "sun"
             ? "bg-white border-white"
             : "bg-gray-900 border-gray-900"
-        } h-32 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
+        } h-26 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
       >
         <div className="h-full">
           <img
