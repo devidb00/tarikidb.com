@@ -1,10 +1,16 @@
 import Head from "next/head";
-import { useState } from "react";
+import ReactGA from "react-ga";
+import { useState, useEffect } from "react";
 import { Leftbar } from "../components";
 import ThemeContext from "../contexts/ThemeContext";
 
 export default function Home() {
   const [theme, setTheme] = useState("sun");
+
+  useEffect(() => {
+    ReactGA.initialize("UA-172955852-1");
+    ReactGA.pageview("/");
+  }, []);
   return (
     <div>
       <Head>
