@@ -5,7 +5,7 @@ import Learning from "./Learning";
 import { useContext } from "react";
 import ThemeContext from "../contexts/ThemeContext";
 
-const Leftbar = () => {
+const Core = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
     <div
@@ -66,4 +66,4 @@ const Leftbar = () => {
     </div>
   );
 };
-export default Leftbar;
+export default Core;

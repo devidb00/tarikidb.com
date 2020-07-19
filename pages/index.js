@@ -1,11 +1,15 @@
 import Head from "next/head";
 import ReactGA from "react-ga";
 import { useState, useEffect } from "react";
-import { Leftbar } from "../components";
+import { Core } from "../components";
 import ThemeContext from "../contexts/ThemeContext";
 
 export default function Home() {
-  const [theme, setTheme] = useState("sun");
+  const [theme, setTheme] = useState(
+    new Date(Date.now()).getHours() > 20 || new Date(Date.now()).getHours() < 7
+      ? "night"
+      : "sun"
+  );
 
   useEffect(() => {
     ReactGA.initialize("UA-172955852-1");
@@ -14,11 +18,11 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Tarik ID BELLOUCH - Mon site</title>
+        <title>Tarik ID BELLOUCH | Mon site</title>
         <link rel="icon" href={theme === "sun" ? "/sun.png" : "/night.png"} />
       </Head>
       <ThemeContext.Provider value={{ theme, setTheme }}>
-        <Leftbar />
+        <Core />
       </ThemeContext.Provider>
     </div>
   );
