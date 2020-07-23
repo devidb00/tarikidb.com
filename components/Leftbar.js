@@ -13,12 +13,12 @@ const Core = () => {
   const sunHead = "bg-grey-200 text-black";
   return (
     <div
-      className={`flex lg:flex-row flex-col ${
+      className={`transition duration-500 flex lg:flex-row flex-col ${
         theme === "sun" ? sunHead : blackHead
       }`}
     >
       <div
-        className={`flex flex-col ${
+        className={`transition duration-500 flex flex-col ${
           theme === "sun" ? sunBody : blackBody
         } h-26 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
       >
