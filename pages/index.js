@@ -6,9 +6,7 @@ import ThemeContext from "../contexts/ThemeContext";
 
 export default function Home() {
   const actualDate = new Date(Date.now()).getHours();
-  const [theme, setTheme] = useState(
-    actualDate > 20 || actualDate < 7 ? "night" : "sun"
-  );
+  const [theme, setTheme] = useState("sun");
 
   useEffect(() => {
     ReactGA.initialize("UA-172955852-1");
