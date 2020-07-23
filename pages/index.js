@@ -10,9 +10,6 @@ export default function Home() {
     actualDate > 20 || actualDate < 7 ? "night" : "sun"
   );
 
-  console.log(actualDate);
-  console.log(theme);
-
   useEffect(() => {
     ReactGA.initialize("UA-172955852-1");
     ReactGA.pageview("/");
@@ -22,7 +19,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Tarik ID BELLOUCH | Mon site</title>
-        <link rel="icon" href={theme === "night" ? "sun.png" : "night.png"} />
+        <link rel="icon" href={theme === "night" ? "night.png" : "sun.png"} />
       </Head>
       <ThemeContext.Provider value={{ theme, setTheme }}>
         <Core />

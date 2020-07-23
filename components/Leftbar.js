@@ -7,19 +7,23 @@ import ThemeContext from "../contexts/ThemeContext";
 
 const Core = () => {
   const { theme, setTheme } = useContext(ThemeContext);
+
+  let header = "";
+  let body = "";
+  if (theme === "night") {
+    header = "bg-gray-900 text-white";
+    body = "bg-gray-900 border-gray-900";
+  } else if (theme == "sun") {
+    header = "bg-grey-200 text-black";
+    body = "bg-white border-white";
+  }
   console.log("Theme", theme);
+  console.log("Couleur du header : ", header);
+  console.log("Couleur du body : ", body);
   return (
-    <div
-      className={`flex lg:flex-row flex-col ${
-        theme === "night" ? "bg-gray-900 text-white" : "bg-grey-200 text-black"
-      }`}
-    >
+    <div className={`flex lg:flex-row flex-col ${header}`}>
       <div
-        className={`flex flex-col ${
-          theme === "sun"
-            ? "bg-white border-white"
-            : "bg-gray-900 border-gray-900"
-        } h-24 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
+        className={`flex flex-col ${body} h-24 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
       >
         <div className="h-full">
           <img
@@ -45,7 +49,7 @@ const Core = () => {
           <div>
             <input
               type="image"
-              src={theme === "sun" ? `/night.png` : "/sun.png"}
+              src={theme === "sun" ? `night.png` : "sun.png"}
               className="w-4 h-4"
               onClick={() => {
                 if (theme === "sun") {
