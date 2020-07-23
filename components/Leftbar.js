@@ -7,24 +7,21 @@ import ThemeContext from "../contexts/ThemeContext";
 
 const Core = () => {
   const { theme, setTheme } = useContext(ThemeContext);
-
-  let header = "";
-  let body = "";
-  console.log("Theme", theme);
-  console.log(header);
-  console.log(body);
-  if (theme === "night") {
-    header = "bg-gray-900 text-white";
-    body = "bg-gray-900 border-gray-900";
-  } else {
-    header = "bg-grey-200 text-black";
-    body = "bg-white border-white";
-  }
+  const blackBody = "bg-gray-900 border-gray-900";
+  const blackHead = "bg-gray-900 text-white";
+  const sunBody = "bg-white border-white";
+  const sunHead = "bg-grey-200 text-black";
 
   return (
-    <div className={`flex lg:flex-row flex-col ${header}`}>
+    <div
+      className={`flex lg:flex-row flex-col ${
+        theme === "sun" ? sunHead : blackHead
+      }`}
+    >
       <div
-        className={`flex flex-col ${body} h-24 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
+        className={`flex flex-col ${
+          theme === "sun" ? sunBody : blackBody
+        } h-24 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
       >
         <div className="h-full">
           <img
