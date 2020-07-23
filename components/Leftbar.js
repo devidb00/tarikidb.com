@@ -10,16 +10,17 @@ const Core = () => {
 
   let header = "";
   let body = "";
-  if (theme === "night") {
-    header = "bg-gray-900 text-white";
-    body = "bg-gray-900 border-gray-900";
-  } else if (theme === "sun") {
-    header = "bg-grey-200 text-black";
-    body = "bg-white border-white";
-  }
   console.log("Theme", theme);
   console.log(header);
   console.log(body);
+  if (theme === "night") {
+    header = "bg-gray-900 text-white";
+    body = "bg-gray-900 border-gray-900";
+  } else {
+    header = "bg-grey-200 text-black";
+    body = "bg-white border-white";
+  }
+
   return (
     <div className={`flex lg:flex-row flex-col ${header}`}>
       <div
