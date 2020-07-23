@@ -13,17 +13,17 @@ const Core = () => {
   if (theme === "night") {
     header = "bg-gray-900 text-white";
     body = "bg-gray-900 border-gray-900";
-  } else if (theme == "sun") {
+  } else if (theme === "sun") {
     header = "bg-grey-200 text-black";
     body = "bg-white border-white";
   }
   console.log("Theme", theme);
-  console.log("Couleur du header : ", header);
-  console.log("Couleur du body : ", body);
+  console.log(header);
+  console.log(body);
   return (
-    <div className={`flex lg:flex-row flex-col bg-gray-900 text-white`}>
+    <div className={`flex lg:flex-row flex-col ${header}`}>
       <div
-        className={`flex flex-col bg-gray-900 border-gray-900 h-24 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
+        className={`flex flex-col ${body} h-24 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
       >
         <div className="h-full">
           <img
