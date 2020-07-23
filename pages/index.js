@@ -11,6 +11,7 @@ export default function Home() {
   );
 
   console.log(actualDate);
+  console.log(theme);
 
   useEffect(() => {
     ReactGA.initialize("UA-172955852-1");
