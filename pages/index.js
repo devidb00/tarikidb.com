@@ -5,7 +5,6 @@ import { Core } from "../components";
 import ThemeContext from "../contexts/ThemeContext";
 
 export default function Home() {
-  const actualDate = new Date(Date.now()).getHours();
   const [theme, setTheme] = useState("sun");
 
   useEffect(() => {
