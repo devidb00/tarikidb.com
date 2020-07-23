@@ -22,7 +22,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Tarik ID BELLOUCH | Mon site</title>
-        <link rel="icon" href={theme === "night" ? "night.png" : "sun.png"} />
+        <link rel="icon" href={theme === "night" ? "sun.png" : "night.png"} />
       </Head>
       <ThemeContext.Provider value={{ theme, setTheme }}>
         <Core />
