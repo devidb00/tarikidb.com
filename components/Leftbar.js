@@ -20,11 +20,11 @@ const Core = () => {
       <div
         className={`flex flex-col ${
           theme === "sun" ? sunBody : blackBody
-        } h-24 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
+        } h-26 lg:h-screen w-screen lg:w-1/4 shadow-2xl sticky top-0`}
       >
-        <div className="h-full">
+        <div className="h-full my-2">
           <img
-            className="rounded-full h-16 w-16 lg:h-32 lg:w-32 mx-auto lg:my-8 my-1"
+            className="rounded-full h-16 w-16 lg:h-32 lg:w-32 mx-auto lg:my-8"
             src="/ProfileImage.jpeg"
             alt="Ma photo"
           />
