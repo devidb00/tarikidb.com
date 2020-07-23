@@ -48,7 +48,8 @@ const Core = () => {
               type="image"
               src={theme === "sun" ? `night.png` : "sun.png"}
               className="w-4 h-4"
-              onClick={() => {
+              onClick={(e) => {
+                e.currentTarget.blur();
                 if (theme === "sun") {
                   setTheme("night");
                 } else {
