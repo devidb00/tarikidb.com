@@ -11,7 +11,7 @@ const Core = () => {
   const blackHead = "bg-gray-900 text-white";
   const sunBody = "bg-white border-white";
   const sunHead = "bg-grey-200 text-black";
-
+  console.log(typeof theme, theme);
   return (
     <div
       className={`flex lg:flex-row flex-col ${
