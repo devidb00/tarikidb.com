@@ -7,10 +7,11 @@ import ThemeContext from "../contexts/ThemeContext";
 
 const Core = () => {
   const { theme, setTheme } = useContext(ThemeContext);
+  console.log("Theme", theme);
   return (
     <div
       className={`flex lg:flex-row flex-col ${
-        theme === "sun" ? "bg-grey-200 text-black" : "bg-gray-900 text-white"
+        theme === "night" ? "bg-gray-900 text-white" : "bg-grey-200 text-black"
       }`}
     >
       <div
