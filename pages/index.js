@@ -11,6 +11,7 @@ export default function Home() {
       : "sun"
   );
 
+  console.log(new Date(Date.now).getHours());
   useEffect(() => {
     ReactGA.initialize("UA-172955852-1");
     ReactGA.pageview("/");
