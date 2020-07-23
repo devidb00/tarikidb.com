@@ -5,17 +5,16 @@ import { Core } from "../components";
 import ThemeContext from "../contexts/ThemeContext";
 
 export default function Home() {
+  const actualDate = new Date(Date.now()).getHours();
   const [theme, setTheme] = useState(
-    new Date(Date.now()).getHours() > 20 || new Date(Date.now()).getHours() < 7
-      ? "night"
-      : "sun"
+    actualDate > 20 || actualDate < 7 ? "night" : "sun"
   );
 
-  console.log(new Date(Date.now).getHours());
   useEffect(() => {
     ReactGA.initialize("UA-172955852-1");
     ReactGA.pageview("/");
   }, []);
+
   return (
     <div>
       <Head>
