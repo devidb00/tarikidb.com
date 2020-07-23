@@ -10,6 +10,8 @@ export default function Home() {
     actualDate > 20 || actualDate < 7 ? "night" : "sun"
   );
 
+  console.log(actualDate);
+
   useEffect(() => {
     ReactGA.initialize("UA-172955852-1");
     ReactGA.pageview("/");
