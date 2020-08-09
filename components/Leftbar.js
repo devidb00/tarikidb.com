@@ -35,15 +35,12 @@ const Core = () => {
                     />
                     <div className="hidden lg:inline text-sm text-center italic font-thin">
                         <p className="mx-4">Salut, c'est Tarik ! </p>
-                        <p className="mx-4">
-                            {" "}
-                            {language === "fr"
-                                ? "Je suis Scrum Master. Je m'interesse aussi beaucoup à la BI et au développement Web !"
-                                : "I am Scrum Master. I am also very interested about BI and web developement"}
+                        <p className="mx-4"> Je suis Scrum Master. Je m'interesse aussi beaucoup à la BI et au
+                            développement Web !
                         </p>
                     </div>
                 </div>
-                <div className="h-12 flex flex-row justify-center items-baseline space-x-4">
+                <div className="h-12 flex justify-center items-baseline space-x-4">
                     <div>
                         <a href="https://urlz.fr/ds5e" target="_blank">
                             <img className="w-4 h-4" src="/linkedin.png" alt="Linkedin"/>
