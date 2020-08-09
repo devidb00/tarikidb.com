@@ -4,12 +4,10 @@ import Experience from "./Experience";
 import Learning from "./Learning";
 import {useContext} from "react";
 import ThemeContext from "../contexts/ThemeContext";
-import LanguageContext from "../contexts/LanguageContext";
 
 const Core = () => {
     // Contexts
     const {theme, setTheme} = useContext(ThemeContext);
-    const {language, setLanguage} = useContext(LanguageContext);
 
     const blackBody = "bg-gray-900 border-gray-900";
     const blackHead = "bg-gray-900 text-white";
