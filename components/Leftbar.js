@@ -43,7 +43,7 @@ const Core = () => {
                 <div className="h-12 flex justify-center items-baseline space-x-4">
                     <div>
                         <a href="https://urlz.fr/ds5e" target="_blank">
-                            <img className="w-4 h-4" src="/linkedin.png" alt="Linkedin"/>
+                            <img className="w-4 h-4" src="/linkedin.png" alt="Linkedin" rel="noopener"/>
                         </a>
                     </div>
                     <div>

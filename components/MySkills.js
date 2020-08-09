@@ -16,6 +16,7 @@ const MySkills = () => {
                         className="underline"
                         href="https://www.scrum.org/certificates/459467"
                         target="_blank"
+                        rel="noopener"
                     >
                         PSM
                     </a>{" "}
@@ -24,6 +25,7 @@ const MySkills = () => {
                         className="underline"
                         href="https://www.scrum.org/certificates/461892"
                         target="_blank"
+                        rel="noopener"
                     >
                         PSPO
                     </a>{" "}
