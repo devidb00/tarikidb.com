@@ -33,19 +33,11 @@ const MySkills = () => {
                 </p>
                 <p className="font-hairline">
                     <span className="font-bold">Base de données : </span>
-                    PostgreSQL
-                    ,
-                    MySQL
-                    et
-                    Oracle
+                    PostgreSQL, MySQL et Oracle
                 </p>
                 <p className="font-hairline">
                     <span className="font-bold">Analyse de données : </span>
-                    Python
-                    ,
-                    Spark
-                    et
-                    Spark SQL
+                    Python, Spark et Spark SQL
                 </p>
                 <p className="font-hairline">
                     <span className="font-bold">Conception : </span>
