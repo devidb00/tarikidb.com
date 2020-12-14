@@ -1,23 +1,42 @@
 const Experience = () => {
-    return (
-        <div>
-            <p className="uppercase font-hairline-bold text-xl mt-4 italic text-center lg:text-left">
-                mes expériences professionnelles
-            </p>
-            <p className="text-justify mt-4">
-                Je suis actuellement Scrum Master et membre de l'équipe de développement
-                en tant que développeur Web -{" "}
-                <a href="https://reactjs.org" target="_blank">
-                    ReactJS
-                </a>{" "}
-                - au sein de
-                Biborne
-                depuis mars 2019. J'ai aussi été 2 fois développeur : une fois à l'Institut Curie
-                (pendant 3 mois) pour y développer - en C couplé à OpenMPI - une application de détection de variations
-                génétiques pouvant entraîner un cancer et la seconde fois, à la DSIT du Grand Reims (2 mois) afin d'y
-                développer 2 applications Web de gestion des factures en PHP couplé au framework Zend 2.
-            </p>
+  return (
+    <div className="w-5/6 flex justify-between items-center">
+      <div className="flex flex-col">
+        <div className="text-white text-5xl">
+          <span className="font-display font-semibold">Tarik </span>
+          <span>ID BELLOUCH</span>
         </div>
-    );
+
+        <div className="text-white text-xl font-light">
+          <a
+            className="w-auto"
+            target="_blank"
+            href="https://github.com/devidb00"
+          >
+            <span className="cursor-pointer">
+              <i className="fab fa-github " />
+              <span className="ml-2 ">GitHub</span>
+            </span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tarik-id-bellouch-9478b210a"
+            target="_blank"
+          >
+            <span className="cursor-pointer ml-3 border-l-2 pl-3">
+              <i className="fab fa-linkedin " />
+              <span className="ml-2 ">LinkedIn</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div className="h-32 w-32">
+        <img
+          className="rounded-full border-4 border-white"
+          src="/ProfileImage.jpeg"
+          alt="Ma photo"
+        />
+      </div>
+    </div>
+  );
 };
 export default Experience;

@@ -1,54 +1,89 @@
+const card_content_who = [
+  {
+    row: 1,
+    text: "// Personal information",
+  },
+  {
+    row: 2,
+    text: 'const name = "Tarik ID BELLOUCH";',
+  },
+  {
+    row: 3,
+    text: 'const location = "Paris Area, France";',
+  },
+  {
+    row: 4,
+    text: "",
+  },
+  {
+    row: 5,
+    text: "// Hobbies",
+  },
+  {
+    row: 6,
+    text: "const hobbies = [",
+  },
+  {
+    row: 7,
+    text: ' "Football",',
+  },
+  {
+    row: 8,
+    text: '"Computer Science"',
+  },
+  {
+    row: 9,
+    text: "];",
+  },
+];
+
 const MySkills = () => {
-    return (
-        <div>
-            <p className="uppercase font-hairline-bold text-xl italic text-center lg:text-left">
-                Mes compétences
-            </p>
-            <div>
-                <p className="mt-4 font-hairline text-justify">
-                    <span className="font-bold">Web : </span>
-                    TypeScript, ReactJS, GraphQL, NodeJS, NextJS et TailwindCSS
-                </p>
-                <p className="font-hairline">
-                    <span className="font-bold">Gestion de projets : </span>
-                    agile (Scrum |{" "}
-                    <a
-                        className="underline"
-                        href="https://www.scrum.org/certificates/459467"
-                        target="_blank"
-                        rel="noopener"
+  return (
+    <div className="mt-10 h-80 flex justify-center items-center">
+      <div className="w-5/6 h-full flex justify-between items-center">
+        <div
+          name="card_code"
+          className="w-4/5 h-full border-2 rounded-sm border-black"
+        >
+          <div
+            name="header"
+            className="h-10 bg-black flex items-center justify-start"
+          >
+            <div
+              onClick={() => alert("Sorry! You can't close..")}
+              className="ml-3 h-3 w-3 bg-red-500 rounded-full cursor-pointer"
+            />
+            <div className="ml-2 h-3 w-3 bg-yellow-500 rounded-full cursor-pointer" />
+            <div className="ml-2 h-3 w-3 bg-green-500 rounded-full cursor-pointer" />
+          </div>
+          <div
+            name="content"
+            className="h-70 w-auto flex flex-col justify-center items-start"
+          >
+            <div className="p-4 font-code text-gray-800">
+              {card_content_who.map((i) => {
+                return (
+                  <div key={i.row}>
+                    <span>{i.row}</span>{" "}
+                    <span
+                      className={`${
+                        i.row === 1 || i.row === 5 ? "text-gray-500" : null
+                      } ml-4 ${i.row === 7 || i.row === 8 ? "ml-8" : null}`}
                     >
-                        PSM
-                    </a>{" "}
-                    |{" "}
-                    <a
-                        className="underline"
-                        href="https://www.scrum.org/certificates/461892"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        PSPO
-                    </a>{" "}
-                    et Kanban) et classique
-                </p>
-                <p className="font-hairline">
-                    <span className="font-bold">Base de données : </span>
-                    PostgreSQL, MySQL et Oracle
-                </p>
-                <p className="font-hairline">
-                    <span className="font-bold">Analyse de données : </span>
-                    Python, Spark et Spark SQL
-                </p>
-                <p className="font-hairline">
-                    <span className="font-bold">Conception : </span>
-                    UML, Merise et modèle Archimate (SI)
-                </p>
-                <p className="font-hairline">
-                    <span className="font-bold">Langue : </span>
-                    Français, Anglais et Arabe
-                </p>
+                      {i.text}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
+          </div>
         </div>
-    );
+        <div className="text-xl text-black">
+          <span className="border-b-2 w-8 h-1 border-black">WHO</span>
+          <span> I AM</span>
+        </div>
+      </div>
+    </div>
+  );
 };
 export default MySkills;
