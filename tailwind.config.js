@@ -7,6 +7,8 @@ module.exports = {
         card: "95%",
         header: "25%",
         content: "75%",
+        header_mobile: "15%",
+        content_mobile: "85%",
         80: "20rem",
         70: "17.25rem",
         86: "22rem",

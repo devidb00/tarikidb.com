@@ -21,7 +21,7 @@ const card_content_who = [
   },
   {
     row: 6,
-    text: "const hobbies = [",
+    text: "let hobbies = [",
   },
   {
     row: 7,
@@ -43,11 +43,11 @@ const card_content_who = [
 
 const MySkills = () => {
   return (
-    <div className="mt-10 h-80 flex justify-center items-center">
-      <div className="w-5/6 h-full flex justify-between items-center">
+    <div className="mt-4 h-80 flex justify-center items-center">
+      <div className="sm:w-5/6 w-11/12 h-full flex justify-between items-center">
         <div
           name="card_code"
-          className="w-4/5 h-full border-2 rounded-sm border-gray-900"
+          className="sm:w-4/5 w-full h-full border-2 rounded-sm border-gray-900"
         >
           <div
             name="header"
@@ -82,7 +82,7 @@ const MySkills = () => {
             </div>
           </div>
         </div>
-        <div className="text-xl text-black">
+        <div className="text-xl text-black sm:visible hidden">
           <span className="border-b-2 w-8 h-1 border-black">WHO</span>
           <span> I AM</span>
         </div>

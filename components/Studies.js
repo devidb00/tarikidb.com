@@ -52,14 +52,14 @@ const card_content_what = [
 const Studies = () => {
   return (
     <div className="my-10 h-86 flex justify-center items-center">
-      <div className="w-5/6 h-full flex justify-between items-center">
-        <div className="text-xl text-black">
+      <div className="sm:w-5/6 w-11/12 h-full flex justify-between items-center">
+        <div className="text-xl text-black sm:visible hidden">
           <span className="border-b-2 w-8 h-1 border-gray-900">WHAT</span>
           <span> I DO</span>
         </div>
         <div
           name="card_code"
-          className="w-4/5 h-full border-2 rounded-sm border-gray-900"
+          className="sm:w-4/5 w-full h-auto border-2 rounded-sm border-gray-900"
         >
           <div
             name="header"
@@ -77,7 +77,7 @@ const Studies = () => {
           </div>
           <div
             name="content"
-            className="h-70 mt-4 w-auto flex flex-col justify-center items-start"
+            className="h-80 mt-4 w-auto flex flex-col justify-center items-start my-4"
           >
             <div className="p-4 font-code text-gray-800">
               {card_content_what.map((i) => {

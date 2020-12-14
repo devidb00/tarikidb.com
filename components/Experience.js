@@ -2,12 +2,12 @@ const Experience = () => {
   return (
     <div className="w-5/6 flex justify-between items-center">
       <div className="flex flex-col">
-        <div className="text-white text-5xl font-display">
+        <div className="text-white sm:text-5xl text-xl font-display">
           <span>Tarik </span>
           <span>ID BELLOUCH</span>
         </div>
 
-        <div className="text-white text-xl font-light">
+        <div className="text-white sm:text-xl font-light">
           <a
             className="w-auto"
             target="_blank"
@@ -29,7 +29,7 @@ const Experience = () => {
           </a>
         </div>
       </div>
-      <div className="h-32 w-32">
+      <div className="sm:h-32 sm:w-32 h-24 w-24">
         <img
           className="rounded-full border-4 border-white"
           src="/ProfileImage.jpeg"
