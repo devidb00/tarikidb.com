@@ -11,6 +11,7 @@ module.exports = {
         content_mobile: "85%",
         80: "20rem",
         70: "17.25rem",
+        74: "19rem",
         86: "22rem",
       },
       minHeight: {
