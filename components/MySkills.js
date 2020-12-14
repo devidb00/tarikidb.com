@@ -82,7 +82,7 @@ const MySkills = () => {
             </div>
           </div>
         </div>
-        <div className="text-xl text-black sm:visible hidden">
+        <div className="text-xl text-black sm:block hidden ">
           <span className="border-b-2 w-8 h-1 border-black">WHO</span>
           <span> I AM</span>
         </div>
