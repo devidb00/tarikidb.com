@@ -47,7 +47,7 @@ const MySkills = () => {
       <div className="sm:w-5/6 w-11/12 h-full flex justify-between items-center">
         <div
           name="card_code"
-          className="sm:w-4/5 w-full h-full border-2 rounded-sm border-gray-900"
+          className="sm:w-4/5 w-full h-auto border-2 rounded-sm border-gray-900"
         >
           <div
             name="header"
