@@ -11,7 +11,7 @@ const Core = () => {
       <main name="main_card" className="min-w-card h-card shadow-xl">
         <div
           name="main_card_header"
-          className="h-header bg-black shadow-xl flex justify-center items-center"
+          className="h-header bg-gray-900 shadow-xl flex justify-center items-center"
         >
           <Experience />
         </div>

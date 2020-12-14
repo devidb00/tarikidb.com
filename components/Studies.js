@@ -54,16 +54,16 @@ const Studies = () => {
     <div className="my-10 h-86 flex justify-center items-center">
       <div className="w-5/6 h-full flex justify-between items-center">
         <div className="text-xl text-black">
-          <span className="border-b-2 w-8 h-1 border-black">WHAT</span>
+          <span className="border-b-2 w-8 h-1 border-gray-900">WHAT</span>
           <span> I DO</span>
         </div>
         <div
           name="card_code"
-          className="w-4/5 h-full border-2 rounded-sm border-black"
+          className="w-4/5 h-full border-2 rounded-sm border-gray-900"
         >
           <div
             name="header"
-            className="h-10 bg-black flex items-center justify-start"
+            className="h-10 bg-gray-900 flex items-center justify-start"
           >
             <div
               onClick={() => alert("Sorry! You can't close..")}

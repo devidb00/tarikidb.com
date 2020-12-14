@@ -33,6 +33,10 @@ const card_content_who = [
   },
   {
     row: 9,
+    text: '"Cinema"',
+  },
+  {
+    row: 10,
     text: "];",
   },
 ];
@@ -43,11 +47,11 @@ const MySkills = () => {
       <div className="w-5/6 h-full flex justify-between items-center">
         <div
           name="card_code"
-          className="w-4/5 h-full border-2 rounded-sm border-black"
+          className="w-4/5 h-full border-2 rounded-sm border-gray-900"
         >
           <div
             name="header"
-            className="h-10 bg-black flex items-center justify-start"
+            className="h-10 bg-gray-900 flex items-center justify-start"
           >
             <div
               onClick={() => alert("Sorry! You can't close..")}
@@ -68,7 +72,7 @@ const MySkills = () => {
                     <span
                       className={`${
                         i.row === 1 || i.row === 5 ? "text-gray-500" : null
-                      } ml-4 ${i.row === 7 || i.row === 8 ? "ml-8" : null}`}
+                      } ${i.row >= 7 && i.row <= 9 ? "ml-8" : "ml-4"}`}
                     >
                       {i.text}
                     </span>

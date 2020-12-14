@@ -2,8 +2,8 @@ const Experience = () => {
   return (
     <div className="w-5/6 flex justify-between items-center">
       <div className="flex flex-col">
-        <div className="text-white text-5xl">
-          <span className="font-display font-semibold">Tarik </span>
+        <div className="text-white text-5xl font-display">
+          <span>Tarik </span>
           <span>ID BELLOUCH</span>
         </div>
 
