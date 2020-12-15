@@ -51,7 +51,7 @@ const card_content_what = [
 
 const Studies = () => {
   return (
-    <div className="my-10 h-86 flex justify-center items-center">
+    <div className="my-8 h-86 flex justify-center items-center">
       <div className="sm:w-5/6 w-11/12 h-full flex justify-between items-center">
         <div className="text-xl text-black sm:block hidden">
           <span className="border-b-2 w-8 h-1 border-gray-900">WHAT</span>
@@ -77,9 +77,9 @@ const Studies = () => {
           </div>
           <div
             name="content"
-            className="h-80 mt-4 w-auto flex flex-col justify-center items-start my-4"
+            className="sm:h-74 h-80 mt-4 w-auto flex flex-col justify-center items-start my-4"
           >
-            <div className="p-4 font-code text-gray-800">
+            <div className="p-2 font-code text-gray-800">
               {card_content_what.map((i) => {
                 return (
                   <div key={i.row}>

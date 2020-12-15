@@ -43,7 +43,7 @@ const card_content_who = [
 
 const MySkills = () => {
   return (
-    <div className="mt-4 h-80 flex justify-center items-center">
+    <div className="mt-2 h-80 flex justify-center items-center">
       <div className="sm:w-5/6 w-11/12 h-full flex justify-between items-center">
         <div
           name="card_code"
@@ -62,9 +62,9 @@ const MySkills = () => {
           </div>
           <div
             name="content"
-            className="h-74 w-auto flex flex-col justify-center items-start"
+            className="h-70 w-auto flex flex-col justify-center items-start"
           >
-            <div className="p-4 font-code text-gray-800">
+            <div className="p-2 font-code text-gray-800">
               {card_content_who.map((i) => {
                 return (
                   <div key={i.row}>
