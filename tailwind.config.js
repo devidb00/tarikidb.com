@@ -14,6 +14,9 @@ module.exports = {
         74: "19rem",
         86: "22rem",
       },
+      margin: {
+        mobile: "15vh",
+      },
       minHeight: {
         header: "167.19px",
       },

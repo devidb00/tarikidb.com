@@ -10,15 +10,15 @@ const Core = () => {
     >
       <main
         name="main_card"
-        className="sm:min-w-card sm:h-card shadow-xl h-full"
+        className="sm:min-w-card sm:h-card shadow-xl h-full mb-4 sm:mb-0"
       >
         <div
           name="main_card_header"
-          className="sm:h-header h-header_mobile bg-gray-900 shadow-xl flex justify-center items-center"
+          className="sm:h-header sm:relative sm:w-full fixed top-0 left:0 right-0 w-screen h-header_mobile bg-gray-900 shadow-xl flex justify-center items-center"
         >
           <Experience />
         </div>
-        <div className="my_content sm:h-content h-content_mobile w-full overflow-y-scroll bg-white">
+        <div className="my_content sm:mt-0 mt-mobile sm:h-content h-content_mobile w-full overflow-y-scroll bg-white">
           <MySkills />
           <Studies />
         </div>

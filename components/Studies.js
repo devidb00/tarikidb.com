@@ -59,7 +59,7 @@ const Studies = () => {
         </div>
         <div
           name="card_code"
-          className="sm:w-4/5 w-full h-auto border-2 rounded-sm border-gray-900 mt-4"
+          className="sm:w-4/5 w-full h-auto border-2 rounded-sm border-gray-900 my-4"
         >
           <div
             name="header"
