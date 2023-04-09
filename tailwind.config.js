@@ -27,7 +27,7 @@ module.exports = {
         custom: "#2933f2",
       },
       minWidth: {
-        card: "70vw",
+        card: "65vw",
       },
       fontFamily: {
         display: ["Rubik"],
