@@ -32,7 +32,7 @@ const Experience = () => {
       <div className="sm:h-32 sm:w-32 h-20 w-20">
         <img
           className="rounded-full border-4 border-white"
-          src="/ProfileImage.jpeg"
+          src="/me.jpeg"
           alt="Ma photo"
         />
       </div>

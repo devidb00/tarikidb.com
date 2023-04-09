@@ -1,1 +1,1 @@
-export {default as Core} from "./Leftbar.js";
+export { default as Core } from "./Leftbar.js";
