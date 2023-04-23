@@ -9,7 +9,7 @@ const card_content_who = [
   },
   {
     row: 3,
-    text: 'const location = "Paris Area, France";',
+    text: 'let location = "Paris Area, France";',
   },
   {
     row: 4,
@@ -29,7 +29,7 @@ const card_content_who = [
   },
   {
     row: 8,
-    text: '"Computer Science"',
+    text: '"Computer Science,"',
   },
   {
     row: 9,
