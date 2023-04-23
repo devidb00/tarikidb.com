@@ -41,7 +41,7 @@ const card_content_what = [
   },
   {
     row: 11,
-    text: '"AWS",',
+    text: '"AWS"',
   },
   {
     row: 12,
