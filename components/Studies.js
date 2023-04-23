@@ -1,11 +1,11 @@
 const card_content_what = [
   {
     row: 1,
-    text: "// Work information",
+    text: "# Work information",
   },
   {
     row: 2,
-    text: 'const profession = ["Software Engineer", "Scrum Master"];',
+    text: 'profession = ["Software Engineer", "Data Engineer"]',
   },
   {
     row: 3,
@@ -13,23 +13,23 @@ const card_content_what = [
   },
   {
     row: 4,
-    text: "// Most important skills",
+    text: "# Most important skills",
   },
   {
     row: 5,
-    text: 'const projectManagement = ["Scrum", "Kanban"]',
+    text: 'project_management = ["Scrum", "Kanban"]',
   },
   {
     row: 6,
-    text: "const favoriteStack = [",
+    text: "favorite_stack = [",
   },
   {
     row: 7,
-    text: '"NextJS",',
+    text: '"Python",',
   },
   {
     row: 8,
-    text: '"NodeJS",',
+    text: '"JavaScript",',
   },
   {
     row: 9,
@@ -37,15 +37,15 @@ const card_content_what = [
   },
   {
     row: 10,
-    text: '"TypeORM",',
+    text: '"Azure",',
   },
   {
     row: 11,
-    text: '"Sass",',
+    text: '"AWS",',
   },
   {
     row: 12,
-    text: "];",
+    text: "]",
   },
 ];
 

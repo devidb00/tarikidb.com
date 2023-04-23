@@ -23,7 +23,7 @@ const Experience = () => {
             target="_blank"
           >
             <span className="cursor-pointer ml-3 border-l-2 pl-3">
-              <i className="fab fa-linkedin " />
+              <i className="fab fa-linkedin" />
               <span className="ml-2 ">LinkedIn</span>
             </span>
           </a>
@@ -32,7 +32,7 @@ const Experience = () => {
       <div className="sm:h-32 sm:w-32 h-20 w-20">
         <img
           className="rounded-full border-4 border-white"
-          src="/me.jpeg"
+          src="/me.png"
           alt="Ma photo"
         />
       </div>
