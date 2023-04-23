@@ -29,7 +29,7 @@ const card_content_who = [
   },
   {
     row: 8,
-    text: '"Computer Science,"',
+    text: '"Computer Science",',
   },
   {
     row: 9,
